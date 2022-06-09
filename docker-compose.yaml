@@ -55,6 +55,7 @@ services:
       - GF_INSTALL_PLUGINS=fetzerch-sunandmoon-datasource
     volumes:
       - ./grafana-storage:/var/lib/grafana
+      - ./grafana.ini:/etc/grafana/grafana.ini
     ports:
       - "3000:3000"
     logging:
